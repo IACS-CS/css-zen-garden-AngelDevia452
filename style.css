@@ -1,6 +1,6 @@
 /********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
+* Design by:  [Angel Devia]
+* Design name:  [ECO]
 * 
 * License: [license name - e.g. MIT if you want to let others
 * use the design with attribution, or All Rights Reserved if you
@@ -23,27 +23,53 @@
   /* Main font */
   font-family: Poppins, sans-serif;
 }
-h1,
+h1
 h2,
 h3,
 h4,
 h5,
 h6 {
   /* Header font */
-  font-family: "Dancing Script", cursive;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Background */
 #css-zen-garden {
-  background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
+  background-image: url('https://images.unsplash.com/photo-1703221291880-303643093c22?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 /* Page wrapper */
 .page-wrapper {
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #ccc;
   padding: 1em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 960px;
   margin: 0 auto;
+}
+.iacs{
+  background-color: red;
+}
+/*Animations*/
+h1::after {
+  content: "🐟";
+  display: inline-block;
+  animation: swim 10s infinite linear;
+}
+
+@keyframes swim {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-30vw, 30vh) rotate(-20deg);
+  }
+  51% {
+    transform: translate(-30vw, 30vh) rotateY(180deg);
+  }
+  100% {
+    transform: translate(30vw, 80vh) rotateY(200deg);
+  }
 }
